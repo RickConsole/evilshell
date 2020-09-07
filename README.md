@@ -1,10 +1,10 @@
 # Evil Shell
 
-Evil Shell mimics a bash shell to hopefully capture a user's password.
+Evil Shell is a social engineering tool to capture user passwords
 
 Running the bianry will present you with a bash-like prompt that mimics the format and colors of a default ubuntu system. 
 
-The idea is that the binary placed on a target machine and a server admin runs it out of curiosity. 
+The idea is that the binary is placed on a target machine and a server admin runs it out of curiosity. 
 
 To the victim, once the binary is run nothing seems to happen, but in reality they are in a fake shell. 
 
