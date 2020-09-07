@@ -14,6 +14,8 @@ import (
 	"bufio"
 )
 
+var exitPhrase string = "devexit"
+
 func main() {
 	exitHandle()
 	reader := bufio.NewReader(os.Stdin)
@@ -35,7 +37,7 @@ func main() {
 		command, _ := reader.ReadString('\n')
 		command = strings.Replace(command, "\n", "", -1)
 
-		if command == "oops" {
+		if command == exitPhrase {
 			os.Exit(0)
 		} else if strings.Contains(command, "sudo") {
 			sudoPrompt := "[sudo] password for " + strings.ToLower(user.Name)
