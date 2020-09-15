@@ -10,11 +10,11 @@ To the victim, nothing happens when it is run, but in reality they are in a fake
 
 Once they run a command using `sudo` they will recieve the standard password prompt, but that password is actually being recorded and stored in a secret location specified by the attacker before compilation.  
 
-# Will it work?
+## Will it work?
 
 I dont know, maybe? The chances of an admin running an unknown binary are very slim. But if it is named something believable and put in a directory where the admin is likely to see it, there's a chance they could run it... right?
 
-# Features
+## Features
 
 - Prompt made to look like standard ubuntu bash prompt
 - Prompt shows the current directory the victim was in when they ran the binary
@@ -22,7 +22,7 @@ I dont know, maybe? The chances of an admin running an unknown binary are very s
 - CTRL+C and `exit` cannot exit the fake shell
 - Secret developer passphrase that can be used to exit the fake shell (default: devexit)
 
-# Current Limitations
+## Current Limitations
 - Cannot change directories or mimic changing of directories
 - Cannot pipe commands together (results in unknown command error)
 - No tab completion
