@@ -1,10 +1,10 @@
 # Evil Shell
 
-*This shell has to be rebuilt so it can mimic a real shell in every way except it captures the root password. I will be working on that soon. *
+*This shell has to be rebuilt so it can mimic a real shell in every way except it captures the root password. I will be working on that soon.
 
 Evil Shell is a social engineering tool to capture user passwords
 
-Running the bianry will present you with a bash-like prompt that mimics the format and colors of a default ubuntu system. 
+Running the binary will present you with a bash-like prompt that mimics the format and colors of a default ubuntu system. 
 
 Ideally, an alias is placed in the compromised user's bashrc that will cause this binary to run when they execute a certain command. The victim will hopefully not notice a difference and continue their tasks. 
 
